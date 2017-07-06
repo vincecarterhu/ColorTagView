@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vc.library.tagview.MainActivity"
+    android:orientation="vertical"
+    >
+
+
+
+    <com.vc.view.colortagview.ColorTagView
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        vc:tag_bg="@color/colorAccent"
+        vc:tag_radius="30dp"
+        vc:tag_textSize="20sp"
+        vc:tag_textColor="@color/white"
+        vc:tag_text="hello world"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <com.vc.view.colortagview.ColorTagView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        vc:tag_bg="@color/c1"
+        vc:tag_radius="10dp"
+        vc:tag_textSize="20sp"
+        vc:tag_textColor="@color/white"
+        vc:tag_text="hello "
+        android:padding="5dp"
+
+        />
+
+    <com.vc.view.colortagview.ColorTagView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        vc:tag_bg="@color/c2"
+        vc:tag_radius="30dp"
+        vc:tag_textSize="20sp"
+        vc:tag_textColor="@color/white"
+        vc:tag_text="test test"
+        android:padding="5dp"
+
+        />
+
+
+    <com.vc.view.colortagview.ColorTagView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        vc:tag_bg="@android:color/holo_blue_bright"
+        vc:tag_radius="30dp"
+        vc:tag_textSize="20sp"
+        vc:tag_textColor="@color/colorPrimaryDark"
+        vc:tag_text="android"
+        android:padding="8dp"
+        vc:tag_bg_style="STROKE"
+
+
+        />
+
+
+    <com.vc.view.colortagview.ColorTagView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        vc:tag_bg="@color/colorAccent"
+        vc:tag_radius="10dp"
+        vc:tag_textSize="20sp"
+        vc:tag_textColor="#000000"
+        vc:tag_text="android"
+        android:padding="8dp"
+        vc:tag_bg_style="STROKE"
+
+
+        />
+
+
+</LinearLayout>

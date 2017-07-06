@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="ColorTagView">
+
+        <attr name="tag_bg" format="color"></attr>
+
+        <attr name="tag_bg_style" format="enum">
+            <enum name="FILL" value="0"></enum>
+
+            <enum name="STROKE" value="1"></enum>
+        </attr>
+
+        <attr name="tag_bg_stroke_width" format="dimension"></attr>
+
+        <attr name="tag_text" format="string"></attr>
+
+        <attr name="tag_textSize" format="dimension"></attr>
+
+        <attr name="tag_textColor" format="color"></attr>
+
+        <attr name="tag_radius" format="dimension"></attr>
+
+
+    </declare-styleable>
+
+
+
+
+
+
+
+</resources>
