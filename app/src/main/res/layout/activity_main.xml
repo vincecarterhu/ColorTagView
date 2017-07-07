@@ -26,15 +26,16 @@
         />
 
     <com.vc.view.colortagview.ColorTagView
+        android:id="@+id/tagview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         vc:tag_bg="@color/c1"
-        vc:tag_radius="10dp"
         vc:tag_textSize="20sp"
         vc:tag_textColor="@color/white"
-        vc:tag_text="hello "
+        vc:tag_text="hello"
         android:padding="5dp"
+        vc:tag_radius="15dp"
 
         />
 

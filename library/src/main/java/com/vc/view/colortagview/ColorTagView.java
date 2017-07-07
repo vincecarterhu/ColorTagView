@@ -31,17 +31,19 @@ public class ColorTagView extends View {
     private int mTagTextColor;
 
 
-    private Paint mTextPaint;
 
+    public static final int FILL =0;
 
-    private final int FILL =0;
-
-    private final int STROKE= 1;
+    public static final int STROKE= 1;
 
     private int mTagBgStyle;
 
     private int mTagBgStrokeWidth;
     RectF rectF;
+
+    Paint  paint  =new Paint(Paint.ANTI_ALIAS_FLAG);
+
+    private Paint mTextPaint =new Paint(Paint.ANTI_ALIAS_FLAG);;
 
     public ColorTagView(Context context) {
         this(context,null);
@@ -75,7 +77,7 @@ public class ColorTagView extends View {
 
         array.recycle();
 
-        mTextPaint =new Paint(Paint.ANTI_ALIAS_FLAG);
+
 
         mTextPaint.setTextSize(mTagTextSize);
 
@@ -128,7 +130,7 @@ public class ColorTagView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        Paint  paint  =new Paint(Paint.ANTI_ALIAS_FLAG);
+
         paint.setColor(mTagBgColor);
         if(mTagBgStyle == FILL){
             paint.setStyle(Paint.Style.FILL);
@@ -171,7 +173,7 @@ public class ColorTagView extends View {
     }
 
     public void setTagRadius(int tagRadius) {
-        mTagRadius = tagRadius;
+        mTagRadius = dp2px(tagRadius);
     }
 
     public int getTagBgColor() {
@@ -206,7 +208,24 @@ public class ColorTagView extends View {
         mTagTextColor = tagTextColor;
     }
 
+    public int getTagBgStyle() {
+        return mTagBgStyle;
+    }
 
+    public void setTagBgStyle(int tagBgStyle) {
+        mTagBgStyle = tagBgStyle;
+    }
+
+    public int getTagBgStrokeWidth() {
+        return mTagBgStrokeWidth;
+    }
+
+    public void setTagBgStrokeWidth(int tagBgStrokeWidth) {
+        mTagBgStrokeWidth = tagBgStrokeWidth;
+        paint.setStrokeWidth(dp2px(mTagBgStrokeWidth));
+        invalidate();
+
+    }
 
     public int sp2px(int spVal) {
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, spVal, getResources().getDisplayMetrics());

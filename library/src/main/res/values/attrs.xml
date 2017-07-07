@@ -4,23 +4,23 @@
 
     <declare-styleable name="ColorTagView">
 
-        <attr name="tag_bg" format="color"></attr>
+        <attr name="tag_bg" format="color"></attr>   <!-- backgroud tagview   背景颜色-->
 
-        <attr name="tag_bg_style" format="enum">
+        <attr name="tag_bg_style" format="enum">     <!-- tag style   显示样式-->
             <enum name="FILL" value="0"></enum>
 
             <enum name="STROKE" value="1"></enum>
         </attr>
 
-        <attr name="tag_bg_stroke_width" format="dimension"></attr>
+        <attr name="tag_bg_stroke_width" format="dimension"></attr>   <!-- stoke width   -->
 
-        <attr name="tag_text" format="string"></attr>
+        <attr name="tag_text" format="string"></attr>                <!--tag text -->
 
-        <attr name="tag_textSize" format="dimension"></attr>
+        <attr name="tag_textSize" format="dimension"></attr>          <!-- tag text size  字体大小-->
 
-        <attr name="tag_textColor" format="color"></attr>
+        <attr name="tag_textColor" format="color"></attr>             <!-- text color  字体颜色 -->
 
-        <attr name="tag_radius" format="dimension"></attr>
+        <attr name="tag_radius" format="dimension"></attr>            <!--tag  radius   -->
 
 
     </declare-styleable>
